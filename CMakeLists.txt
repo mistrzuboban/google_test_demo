@@ -9,8 +9,9 @@ include_directories(googletest/include)
 #include the googlemock/include dir
 include_directories(googlemock/include)
 
-add_executable(google_test_demo main.cpp HtmlParser.cpp HtmlParser.h HttpFetch.cpp HttpFetch.h)
-add_executable(google_test_demo_test HtmlParser.cpp HtmlParser.h HttpFetch.cpp HttpFetch.h HttpTest.cpp HttpTest.h HttpFetchMock.cpp HttpFetchMock.h)
+add_executable(google_test_demo main.cpp HtmlParser.cpp HtmlParser.h HttpFetch.cpp HttpFetch.h DummyArray.cpp DummyArray.h)
+add_executable(google_test_demo_test HtmlParser.cpp HtmlParser.h HttpFetch.cpp HttpFetch.h TestAll.cpp TestAll.h HttpFetchMock.cpp HttpFetchMock.h
+        DummyArray.cpp DummyArray.h DummyArrayIterator.cpp DummyArrayIterator.h)
 
 find_library(GOOGLE_TEST_MAIN_LIBRARY
         NAMES gtestd
